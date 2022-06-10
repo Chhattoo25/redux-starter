@@ -1,7 +1,10 @@
 import React from "react";
+import { useDispatch } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
 
 const Navbar = () => {
+  const dispatch = useDispatch()
+  // const {isAuth}
   const isAuthenticated = true;
   const navigate = useNavigate();
   const handleLoginClick = () => {
